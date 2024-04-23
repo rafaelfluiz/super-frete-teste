@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+.container {
+  width: 90%;
+  max-width: 400px;
+  min-height: 600px;
+  margin: auto;
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: #f1f1f1;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container .superior-box{
+  padding: 20px;
+  background: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.new-message input {
+  width: calc(100% - 25px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 50px;
+}
+
+input::placeholder {
+  font-size: 16px; /* Define o tamanho da fonte do placeholder */
+  color: #888888;    /* Opcional: também está mudando a cor do placeholder */
+}
+
+.box-button button {
+  margin-top: 20px;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.new-message button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message-list{
+  padding: 10px;
+}
+
+.message-list h3 {
+  margin-bottom: 10px;
+}
+
+.message {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message span {
+  display: block;
+  color: #888;
+  font-size: 0.8em;
 }

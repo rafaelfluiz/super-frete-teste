@@ -1,0 +1,21 @@
+[debug] [2024-04-22T18:59:27.100Z] ----------------------------------------------------------------------
+[debug] [2024-04-22T18:59:27.102Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rafae\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-22T18:59:27.102Z] CLI Version:   13.7.3
+[debug] [2024-04-22T18:59:27.103Z] Platform:      win32
+[debug] [2024-04-22T18:59:27.103Z] Node Version:  v18.20.2
+[debug] [2024-04-22T18:59:27.104Z] Time:          Mon Apr 22 2024 15:59:27 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2024-04-22T18:59:27.104Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-22T18:59:27.110Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-22T18:59:27.111Z] > authorizing via signed-in user (rafaelf.luiz@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\rafae\Documents\Desenvolvimento\super-frete
+

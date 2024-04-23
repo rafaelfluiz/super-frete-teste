@@ -1,70 +1,52 @@
+# Pré-Requisitos
+Antes de começar, certifique-se de que você tem o Node.js e o npm instalados em sua máquina. Se não, você pode baixá-los e instalá-los a partir de nodejs.org.
+
+# Instalação
+Para instalar este projeto, siga estas etapas:
+
+1. Clonar o Repositório
+### `git clone https://seu-repositorio-aqui.git`
+### `cd nome-do-projeto`
+
+2. Instalar DependênciasDentro do diretório do projeto, execute:
 # Getting Started with Create React App
+### `npm install`
+Isso instalará todas as dependências necessárias para rodar o projeto conforme definido no arquivo package.json.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+# Executar Localmente
+Para rodar este projeto localmente em sua máquina, execute o seguinte comando no terminal:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Este comando irá iniciar o servidor de desenvolvimento e abrirá automaticamente uma aba no seu navegador padrão. Se o navegador não abrir automaticamente, você pode acessar http://localhost:3000 manualmente.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Build com Capacitor
 
-### `npm test`
+Para construir este projeto usando o Capacitor para plataformas como Android, iOS e Web, siga estas etapas:
+1. Adicionar Capacitor ao seu projeto React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm install @capacitor/core @capacitor/cli`
+### `npx cap init` 
 
+Siga as instruções para configurar o Capacitor.
+
+2. Adicionar PlataformasPara Android:
+### `npx cap add android`
+
+Para iOS:
+### `npx cap add ios`
+
+ Para Web
+### `npx cap add @capacitor-community/electron`
+
+3. Build do Projeto React
 ### `npm run build`
+Este comando prepara o build de produção do seu projeto.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Copiar Build para o Capacitor
+### `npx cap copy`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Executando os Testes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `npm test App.test.js`
+Este comando irá rodar os testes definidos no arquivo App.test.js usando Jest e React Testing Library, e os resultados serão exibidos no terminal.
